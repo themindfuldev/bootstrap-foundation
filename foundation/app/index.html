@@ -1,0 +1,88 @@
+<!doctype html>
+<!--[if IE 9]>    <html class="no-js lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- build:css css/app.min.css -->
+
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app_override.css">
+    <!-- endbuild -->
+    <!-- build:js js/vendor/modernizr.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+  </head>
+  <body>
+
+    <nav class="top-bar" data-topbar>
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">Foundation</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="has-dropdown">
+            <a href="#">Help</a>
+            <ul class="dropdown">
+              <li><a href="#" data-reveal-id="aboutModal" data-reveal>About</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li class="active"><a href="#">Login</a></li>
+        </ul>
+
+        <div id="aboutModal" class="reveal-modal" data-reveal>
+          <h2>About me</h2>
+          <p class="lead">Tiago Romero Garcia</p>
+          <p>tgarcia@avenuecode.com</p>
+          <a class="close-reveal-modal">&#215;</a>
+        </div>
+      </section>
+    </nav>
+
+    <form data-abide>
+      <div class="row">
+        <div class="input-wrapper large-6 medium-8 column">
+          <label data-tooltip class="has-tip radius" title="Please enter a valid e-mail address.">Email <small>required</small></label>
+            <input type="email" required>
+          <small class="error">A valid email address is required.</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-wrapper large-6 medium-8 column">
+          <label data-tooltip class="has-tip radius" title="Please enter a valid password.">Password <small>required</small></label>
+          <input type="password" required>
+          <small class="error">A valid password is required.</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-6 medium-8 column">
+          <button class="button success radius">Login</button>
+          <a href="#" class="forgot">Forgot your password?</a>
+        </div>
+      </div>
+    </form>
+
+
+
+    <!-- build:js js/vendor/jquery.min.js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/foundation/foundation.min.js -->
+    <script src="bower_components/foundation/js/foundation.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/app.min.js -->
+    <script src="js/app.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
