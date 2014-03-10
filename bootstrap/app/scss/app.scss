@@ -2,4 +2,33 @@
 
 @charset "UTF-8";
 
-//@import "bootstrap-sass/lib/bootstrap";
+@import "bootstrap";
+
+form {
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+
+  input {
+    border-radius: 5px;
+  }
+
+  .has-tip {
+    border-bottom: 0;
+  }
+
+  .forgot {
+    margin-left: 10px;
+  }
+
+  div.row:last-child {
+    margin-top: 20px;
+  }
+  button.btn {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1.0625rem;
+    padding-left: 2rem;
+  }
+}

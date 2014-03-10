@@ -53,15 +53,15 @@
     <form data-abide>
       <div class="row">
         <div class="input-wrapper large-6 medium-8 column">
-          <label data-tooltip class="has-tip radius" title="Please enter a valid e-mail address.">Email <small>required</small></label>
-            <input type="email" required>
+          <label class="radius has-tip">Email <small>required</small></label>
+            <input type="email" required data-tooltip title="Please enter a valid e-mail address.">
           <small class="error">A valid email address is required.</small>
         </div>
       </div>
       <div class="row">
         <div class="input-wrapper large-6 medium-8 column">
-          <label data-tooltip class="has-tip radius" title="Please enter a valid password.">Password <small>required</small></label>
-          <input type="password" required>
+          <label class="has-tip radius">Password <small>required</small></label>
+          <input type="password" required data-tooltip title="Please enter a valid password.">
           <small class="error">A valid password is required.</small>
         </div>
       </div>
@@ -72,8 +72,6 @@
         </div>
       </div>
     </form>
-
-
 
     <!-- build:js js/vendor/jquery.min.js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
